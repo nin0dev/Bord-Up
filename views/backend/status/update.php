@@ -18,16 +18,12 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
 ?>
 
 <!--Bootstrap form to deletew status-->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <h1>Create keyword</h1>
-        </div>
-        <div class="col-md-12">
-            <!--Form to delete status-->
+            <!--Form to update status-->
             <form action="<?php echo ROOT_URL . '/api/status/update.php' ?>" method="post">
                 <div class="form-group">
-                    <label for="libStat">libStat</label>
+                    <label for="libStat">Statut</label>
                     <input id="numStat" class="form-control" style="display: none;" type="text" name="numStat" value="<?php echo($numStat); ?>" readonly="readonly">
                     <input id="libStat" class="form-control" type="text" name="libStat" value="<?php echo($libStat); ?>">
                 </div>
@@ -36,5 +32,5 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
                 </div>
             </form>
         </div>
-    </div>
-</div>
+
+<?php include '../../../footer.php' ?>

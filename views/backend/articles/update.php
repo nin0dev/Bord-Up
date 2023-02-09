@@ -18,12 +18,8 @@ $libCom = sql_select("COMMENT", "libCom", "numCom = $numCom")[0]['libCom'];
 ?>
 
 <!--Bootstrap form to deletew status-->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <h1>Update Comment</h1>
-        </div>
-        <div class="col-md-12">
             <!--Form to delete status-->
             <form action="<?php echo ROOT_URL . '/api/comments/update.php' ?>" method="post">
                 <div class="form-group">
@@ -36,5 +32,5 @@ $libCom = sql_select("COMMENT", "libCom", "numCom = $numCom")[0]['libCom'];
                 </div>
             </form>
         </div>
-    </div>
-</div>
+
+<?php include '../../../footer.php'; ?>

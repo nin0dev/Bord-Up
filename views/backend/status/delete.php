@@ -13,12 +13,8 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
 ?>
 
 <!--Bootstrap form to create a new status-->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <h1>Delete Status</h1>
-        </div>
-        <div class="col-md-12">
             <!--Form to create a new status-->
             <form action="<?php echo ROOT_URL . '/api/status/delete.php' ?>" method="post">
                 <div class="form-group">
@@ -31,5 +27,5 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
                 </div>
             </form>
         </div>
-    </div>
-</div>
+
+<?php include '../../../footer.php'; ?>

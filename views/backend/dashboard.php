@@ -17,9 +17,7 @@
 <?php 
 include '../../header.php';
 ?>
-<body>
-    <div class="d-block col-12">
-        <div class="not-footer d-flex">
+
             <div class="main col-10">
                 <div class="container">
                     <div class="row">

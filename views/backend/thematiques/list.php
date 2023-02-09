@@ -14,9 +14,7 @@ $themes = sql_select("THEMATIQUE", "*");
 ?>
 
 <!-- Bootstrap default layout to display all status in foreach -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <h1>Thématiques</h1>
             <table class="table table-striped">
                 <thead>
@@ -39,7 +37,6 @@ $themes = sql_select("THEMATIQUE", "*");
             </table>
             <a href="create.php" class="btn btn-success">Create</a>
         </div>
-    </div>
 
 <?php
 include '../../../footer.php'; // contains the footer

@@ -18,12 +18,8 @@ $libThem = sql_select("THEMATIQUE", "libThem", "numThem = $numThem")[0]['libThem
 ?>
 
 <!--Bootstrap form to deletew status-->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <h1>Update Theme</h1>
-        </div>
-        <div class="col-md-12">
             <!--Form to delete status-->
             <form action="<?php echo ROOT_URL . '/api/thematiques/update.php' ?>" method="post">
                 <div class="form-group">
@@ -36,5 +32,5 @@ $libThem = sql_select("THEMATIQUE", "libThem", "numThem = $numThem")[0]['libThem
                 </div>
             </form>
         </div>
-    </div>
-</div>
+
+<?php include '../../../footer.php'; ?>

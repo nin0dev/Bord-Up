@@ -18,12 +18,8 @@ $libMotCle = sql_select("MOTCLE", "libMotCle", "numMotCle = $numMotCle")[0]['lib
 ?>
 
 <!--Bootstrap form to deletew status-->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Update Keywords</h1>
-        </div>
-        <div class="col-md-12">
+        <div class="col-md-10">
+            <h1>Update Keyword</h1>
             <!--Form to delete status-->
             <form action="<?php echo ROOT_URL . '/api/status/update.php' ?>" method="post">
                 <div class="form-group">
@@ -36,5 +32,3 @@ $libMotCle = sql_select("MOTCLE", "libMotCle", "numMotCle = $numMotCle")[0]['lib
                 </div>
             </form>
         </div>
-    </div>
-</div>

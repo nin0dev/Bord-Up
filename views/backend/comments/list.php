@@ -14,9 +14,7 @@ $comments = sql_select("COMMENT", "*");
 ?>
 
 <!-- Bootstrap default layout to display all status in foreach -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <h1>Comments</h1>
             <table class="table table-striped">
                 <thead>
@@ -39,7 +37,6 @@ $comments = sql_select("COMMENT", "*");
             </table>
             <a href="create.php" class="btn btn-success">Create</a>
         </div>
-    </div>
 
 <?php
 include '../../../footer.php'; // contains the footer

@@ -13,12 +13,8 @@ $libTitrArt = sql_select("ARTICLE", "libTitrArt", "numArt = $numArt")[0]['libTit
 ?>
 
 <!--Bootstrap form to create a new status-->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <h1>Delete Article</h1>
-        </div>
-        <div class="col-md-12">
             <!--Form to create a new status-->
             <form action="<?php echo ROOT_URL . '/api/articles/delete.php' ?>" method="post">
                 <div class="form-group">
@@ -31,5 +27,4 @@ $libTitrArt = sql_select("ARTICLE", "libTitrArt", "numArt = $numArt")[0]['libTit
                 </div>
             </form>
         </div>
-    </div>
-</div>
+<?php include '../../../footer.php'; ?>

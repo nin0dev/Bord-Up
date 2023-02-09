@@ -2,33 +2,6 @@
 include '../../header.php';
 ?>
 
-        <div class="d-block col-12">
-            <div class="not-footer d-flex">
-                <nav class="col-2">
-                    <img src="./assets/Frame.svg" alt="logo" />
-                    <ul>
-                        <li>Accueil</li>
-                        <li>Articles</li>
-                        <li>Contact</li>
-                        <ul class="rs">
-                            <li>
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </li>
-                            <li><i class="fa-brands fa-facebook"></i></li>
-                        </ul>
-                    </ul>
-                    <ul class="settings d-block">
-                        <ul class="d-flex">
-                            <li>FR</li>
-                            <li>EN</li>
-                        </ul>
-                        <ul class="d-flex">
-                            <li><i class="fa-solid fa-moon"></i></li>
-
-                            <li>Aa</li>
-                        </ul>
-                    </ul>
-                </nav>
                 <div class="main col-10">
                     <div class="principal">
                         <h1 class="intro">Tous nos articles</h1>

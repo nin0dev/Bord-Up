@@ -9,12 +9,8 @@ include '../../../header.php';
 ?>
 
 <!--Bootstrap form to create a new status-->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <h1>Create Member</h1>
-        </div>
-        <div class="col-md-12">
             <!--Form to create a new status-->
             <form action="<?php echo ROOT_URL . '/api/users/create.php' ?>" method="post">
                 <div class="form-group">
@@ -34,5 +30,3 @@ include '../../../header.php';
                 </div>
             </form>
         </div>
-    </div>
-</div>

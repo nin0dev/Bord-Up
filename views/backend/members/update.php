@@ -20,12 +20,8 @@ $eMailMemb = sql_select("MEMBRE", "eMailMemb", "numMemb = $numMemb")[0]['eMailMe
 ?>
 
 <!--Bootstrap form to deletew status-->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <h1>Edit Member</h1>
-        </div>
-        <div class="col-md-12">
             <!--Form to delete status-->
             <form action="<?php echo ROOT_URL . '/api/users/update.php' ?>" method="post">
                 <div class="form-group">
@@ -41,5 +37,4 @@ $eMailMemb = sql_select("MEMBRE", "eMailMemb", "numMemb = $numMemb")[0]['eMailMe
                 </div>
             </form>
         </div>
-    </div>
-</div>
+<?php include '../../../footer.php'; ?>
