@@ -1,17 +1,15 @@
 <?php
 include '../../header.php';
+
+$articles = sql_select('ARTICLE', '*');
+foreach($articles as $key => $articles)
 ?>
 
                 <div class="main col-10">
                     <div class="principal">
                         <h1 class="intro">Tous nos articles</h1>
                         <div class="dropdown">
-                            <button
-                                class="btn btn-primary dropdown-toggle"
-                                type="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
+                            <button class="btn btn-primary dropdown-toggle" type="button"data-bs-toggle="dropdown" aria-expanded="false">
                                 Trier par
                             </button>
                             <ul class="dropdown-menu">
@@ -23,280 +21,20 @@ include '../../header.php';
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#"
-                                        >Les plus vue</a
+                                        >Les plus vus</a
                                     >
                                 </li>
                             </ul>
                         </div>
                         <div class="cardarticle">
                             <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
+                                <img src="./assets/img/<?php echo $articles['urlPhotArt']; ?>" class="card-img-top"/>
                                 <div class="card-body">
-                                    <h5 class="card-title">Article 1</h5>
+                                    <h5 class="card-title"><?php echo $articles['libTitrArt'] ?></h5>
                                     <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
+                                        <?php echo $articles['libChapoArt'] ?>
                                     </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 2</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 3</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 3</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 3</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 3</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 3</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 3</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 3</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 3</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 3</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 3</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 3</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 3</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="https://media.licdn.com/dms/image/C5622AQHHcxzUZUA8JQ/feedshare-shrink_800/0/1675702771854?e=1678924800&v=beta&t=GjZSKMG_sSQcAxA5qCUnM6BuPFEDcc4gHXAyaYpIC54"
-                                    class="card-img-top"
-                                    alt="..."
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Article 3</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary"
-                                        >Voir Plus</a
-                                    >
+                                    <a href="#" class="btn btn-primary">Voir Plus</a>
                                 </div>
                             </div>
                         </div>

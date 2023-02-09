@@ -9,21 +9,32 @@ include '../../../header.php';
     exit();
 } */
 
-$numCom = $_GET ['numCom'];
+$libTitrArt = $_GET ['libTitrArt'];
+$libChapoArt = $_GET ['libChapoArt'];
+$libAccrochArt = $_GET ['libAccrochArt'];
+$parag1Art = $_GET ['parag1Art'];
+$libSsTitr1Art = $_GET ['libSsTitr1Art'];
+$parag2Art = $_GET ['parag2Art'];
+$libSsTitr2Art = $_GET ['libSsTitr2Art'];
+$parag3Art = $_GET ['parag3Art'];
+$libConclArt = $_GET ['libConclArt'];
+$urlPhotArt = $_GET ['urlPhotArt'];
+$numArt = $_GET ['numArt'];
+
 //$numStat = sql_select("STATUT","numStat")["4"]['numStat'];
 
-$libCom = sql_select("COMMENT", "libCom", "numCom = $numCom")[0]['libCom'];
+$libTitreArt = sql_select("ARTICLE", "libTitrArt = $libTitrArt", "libChapoArt = $libChapoArt", "libAccrochArt = $libAccrochArt", "parag1Art = $parag1Art", "libSsTitr1Art = $libSsTitr1Art", "libSsTitr1Art = $libSsTitr1Art", "parag2Art = $parag2Art", "libSsTitr2Art = $libSsTitr2Art", "parag3Art = $parag3Art", "libConclArt = $libConclArt", "urlPhotArt = $urlPhotArt", "numArt = $numArt")[0]['libTitrArt'];
 
 
 ?>
 
 <!--Bootstrap form to deletew status-->
         <div class="col-md-10">
-            <h1>Update Comment</h1>
+            <h1>Edit Article</h1>
             <!--Form to delete status-->
-            <form action="<?php echo ROOT_URL . '/api/comments/update.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/articles/update.php' ?>" method="post">
                 <div class="form-group">
-                    <label for="libCom">Comment</label>
+                    <label for="libTitrArt">Titre</label>
                     <input id="numCom" class="form-control" style="display: none;" type="text" name="numArt" value="<?php echo($numCom); ?>" readonly="readonly">
                     <input id="libCom" class="form-control" type="text" name="libCom" value="<?php echo($libCom); ?>">
                 </div>

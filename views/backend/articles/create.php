@@ -12,8 +12,8 @@ include '../../../header.php';
         <div class="col-md-10">
             <h1>Create Article</h1>
             <!--Form to create a new status-->
-            <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post">
-                <div class="form-group">
+            <form method="post" enctype='multipart/form-data'action="<?php echo ROOT_URL . '/api/articles/create.php' ?>">
+                <div class="form-group" >
                     <label for="libTitrArt">Titre</label>
                     <input id="numArt" class="form-control" type="text" name="libTitrArt">
                     <label for="libChapoArt">Chapô</label>
@@ -37,8 +37,10 @@ include '../../../header.php';
                     <label for="libConclArt">Conclusion</label>
                     <textarea id="numArt" class="form-control" type="text" name="libConclArt">
                     </textarea>
+
                     <label for="urlPhotArt"></label>
-                    <input id="numArt" class="form-control" type="text" name="urlPhotArt">
+                    <input type="file" name="file" id="file">
+                    <input type="submit" value="Upload">
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-primary">Create</button>
