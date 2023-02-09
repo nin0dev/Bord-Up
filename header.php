@@ -18,7 +18,7 @@ require_once 'config.php';
 </head>
 
 <body>
-<div class="container">
+<div class="test">
     <div class="row">
         <nav class="col-2">
             <img src="/views/frontend/assets/Frame.svg" alt="logo" />
