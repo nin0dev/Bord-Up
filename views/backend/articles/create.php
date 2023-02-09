@@ -39,8 +39,8 @@ include '../../../header.php';
                     </textarea>
 
                     <label for="urlPhotArt"></label>
-                    <input type="file" name="file" id="file">
-                    <input type="submit" value="Upload">
+                    <!-- <input type="file" name="file" id="file"> -->
+                    <!-- <input type="submit" value="Upload"> -->
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-primary">Create</button>
