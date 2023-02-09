@@ -7,4 +7,5 @@
     <a href="#">Conditions générales</a>
 </footer>
 </body>
+</html>
 <!-- Load JS scripts -->
