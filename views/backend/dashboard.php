@@ -6,11 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bord'Up</title>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="../frontend/style home/index.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
             @import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
         </style>
@@ -20,7 +18,7 @@
         <div class="d-block col-12">
             <div class="not-footer d-flex">
                 <nav class="col-2">
-                    <img src="./assets/Frame.svg" alt="logo" />
+                    <img src="../frontend/assets/Frame.svg" alt="logo" />
                     <ul>
                         <li>Accueil</li>
                         <li>Nos Articles</li>
@@ -50,7 +48,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>BlogArt Admin Dashboard</h1>
+                <h1>Bord'Up Admin Dashboard</h1>
                 <p>Welcome to the dashboard</p>
             </div>
             <div class="col-md-12">
@@ -58,7 +56,7 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Page</th>
+                            <th>Pages</th>
                             <th>Actions</th>
                             <th>Commentaires</th>
                         </tr>
