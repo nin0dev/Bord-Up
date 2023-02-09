@@ -24,8 +24,8 @@ require_once 'config.php';
             <img src="/views/frontend/assets/Frame.svg" alt="logo" />
             <ul>
                 <li><a href="/views/frontend/home.php" class="nav-link active">Accueil</a></li>
-                <li><a href="/views/frontend/all-article.html">Articles</a></li>
-                <li><a href="/views/frontend/contact.html">Contact</a></li>
+                <li><a href="/views/frontend/all-article.php">Articles</a></li>
+                <li><a href="/views/frontend/contact.php">Contact</a></li>
                 <li><a class="nav-link" href="/views/backend/dashboard.php">Admin</a></li>
                 <ul class="rs">
                     <li><i class="fa-brands fa-linkedin-in"></i></li>
