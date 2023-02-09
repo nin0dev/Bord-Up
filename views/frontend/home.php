@@ -1,5 +1,6 @@
 <?php include '../../header.php';?>
 
+
         <div class="col-10">
             <div class="last-article">
                 <h1>Dernier Article</h1>
@@ -147,6 +148,8 @@
                     </div>
                 </div>
             </section>
-        <?php include '../../footer.php'; ?>
         </div>
+    </div>
+</div>
 
+<?php include '../../footer.php'; ?>
