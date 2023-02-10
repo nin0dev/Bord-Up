@@ -22,7 +22,9 @@
 .col-10 {
     background-color: #f6fbff;
 }
-
+.row{
+    position: relative;
+}
 nav {
     padding-left: 50px !important;
     position: sticky;
@@ -32,6 +34,7 @@ nav {
 }
 nav img {
     margin: 50px 100px 100px 0;
+    width: 70%;
 }
 nav ul {
     margin-bottom: 80px;
@@ -56,6 +59,28 @@ nav .settings li {
 }
 nav .settings ul {
     margin-bottom: 0;
+}
+
+
+#btn {
+    display: block;
+    position: fixed;
+    top: 40px;
+    right: -90%;
+    transition: 0.3s;
+}
+#btn span {
+    height: 5px;
+    width: 30px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    margin-top: 5px;
+    transition: 0.3s ease;
+}
+@media screen and (min-width: 900px) {
+      #btn {
+    display: none;
+    }
 }
 
 .main {
@@ -122,7 +147,34 @@ nav .settings ul {
 
 .articles {
     display: flex;
+    
 }
+@media screen and (max-width:900px) {
+        .articles {
+            flex-direction: column;
+align-items: center;            
+        }
+        .article{
+            flex-direction: column-reverse ;
+        }
+        .articles .article .article_img .img-container{
+            height: 200px !important;
+        }
+        .articles .article .article_img .img-container img {
+            width: 100% !important;
+          }
+        .cardarticle{
+display: flex;
+flex-direction: column;
+align-items: center;
+        }
+        nav{
+            display: none;
+          }
+          .col-10{
+            width: 100% !important;
+          }
+    }
 /* .articles .articles_l {
     margin-right: 50px;
 } */

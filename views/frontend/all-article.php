@@ -8,7 +8,7 @@ $articles = sql_select('ARTICLE', '*');
     <div class="principal">
         <h1 class="intro">Tous nos articles</h1>
         <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button"data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Trier par
             </button>
             <ul class="dropdown-menu">
@@ -26,7 +26,7 @@ $articles = sql_select('ARTICLE', '*');
         <div class="cardarticle">
             <?php foreach ($articles as $article) { ?>
                 <div class="card" style="width: 18rem">
-                    <img src="./assets/img/<?php echo $article['urlPhotArt']; ?>" class="card-img-top"/>
+                    <img src="./assets/img/<?php echo $article['urlPhotArt']; ?>" class="card-img-top" />
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $article['libTitrArt'] ?></h5>
                         <p class="card-text">
@@ -45,10 +45,7 @@ $articles = sql_select('ARTICLE', '*');
     <p>Mentions légales</p>
     <p>Conditions générales</p>
 </footer>
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"
-></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
+
 </html>
