@@ -15,7 +15,7 @@
                 <h2>Plus d'articles</h2>
                 <div class="articles">
                     <div class="articles_l col-6">
-                        <div class="article d-flex">
+                        <div class="article d-flex ">
                             <div class="article_txt">
                                 <h3 class="fs-4">
                                     Lorem ipsum dolor sit amet.

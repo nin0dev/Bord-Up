@@ -123,9 +123,9 @@ nav .settings ul {
 .articles {
     display: flex;
 }
-.articles .articles_l {
+/* .articles .articles_l {
     margin-right: 50px;
-}
+} */
 .articles .article {
     min-width: 300px;
     margin: 20px 20px 50px 0;

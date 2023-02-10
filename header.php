@@ -42,7 +42,7 @@ require_once 'config.php';
                     <li>Aa</li>
                 </ul>
             </ul>
-            <div class="d-flex">
+            <div class="d-flex flex-column">
                 <a class="" href="/views/frontend/login.php">Login</a>
                 <a class="" href="/views/backend/register.php">Register</a>
                 <a class="" href="/views/backend/login.php">Mon compte</a>
