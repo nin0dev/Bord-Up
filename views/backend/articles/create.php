@@ -36,6 +36,8 @@ include '../../../header.php';
                 <label for="libConclArt">Conclusion</label>
                 <textarea id="LibConclArt" class="form-control" type="text" name="libConclArt">
                 </textarea>
+                <label for="numThem">Numéro thématique</label>
+                <input id="numThem" class="form-control" type="text" name="numThem">
 
                 <label for="urlPhotArt"></label>
                 <input type="file" name="file" id="file">
